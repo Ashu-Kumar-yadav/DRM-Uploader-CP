@@ -201,7 +201,6 @@ async def account_login(bot: Client, m: Message):
 
             elif 'videos.classplusapp' in url:
                 tokencp ='eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpZCI6MTI3ODU4OTc0LCJvcmdJZCI6MzcxOSwidHlwZSI6MSwibW9iaWxlIjoiOTE4MTA3NDQyNjIzIiwibmFtZSI6IkFzaG9rIEphbm5pIiwiZW1haWwiOm51bGwsImlzSW50ZXJuYXRpb25hbCI6MCwiZGVmYXVsdExhbmd1YWdlIjoiRU4iLCJjb3VudHJ5Q29kZSI6IklOIiwiY291bnRyeUlTTyI6IjkxIiwidGltZXpvbmUiOiJHTVQrNTozMCIsImlzRGl5Ijp0cnVlLCJvcmdDb2RlIjoibXpzIiwiaXNEaXlTdWJhZG1pbiI6MCwiZmluZ2VycHJpbnRJZCI6IjJiMzAxYzM0Yjg5MWZiYTJhNWNmMmI2MjQwNzY1YTQyIiwiaWF0IjoxNzM3NjQ1OTExLCJleHAiOjE3MzgyNTA3MTF9.zYsPwm8PvSUGkftdm6k-LWogh33M_xnmNAAMuwvFnuCxvaQtNUT3_aK_ulbH3TtO'
-'
                 url = requests.get(f'https://api.classplusapp.com/cams/uploader/video/jw-signed-url?url={url}', headers={'x-access-token': tokencp}).json()['url']
             
             elif 'media-cdn.classplusapp.com' in url:
